@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+require("dotenv").config({ path: "./config/.env" });
 
 const connectDB = async () => {
   try {
@@ -7,6 +8,7 @@ const connectDB = async () => {
       useUnifiedTopology: true,
       useFindAndModify: false,
       useCreateIndex: true,
+      dbName: "iven-ask",
     });
 
     console.log(`MongoDB Connected: ${conn.connection.host}`);
