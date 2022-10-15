@@ -1,4 +1,4 @@
-<%- include('partials/header', {user: user}) -%>
+<%- include('partials/header', {user: user, title:null}) -%>
 
 <main class="container p-5 mt-20">
   <div class="flex items-center w-full justify-center gap-5">
@@ -34,17 +34,17 @@
     
     
   </div>
-    <div class="row justify-content-center mt-5">
+    <div class="mt-5">
         <ul class="w-full flex flex-col items-center">
           <% for(var i=0; i<posts.length; i++) {%>
-            <li class="col-6 justify-content-between mt-5">
+            <li class="mt-2">
               <a href="/post/<%= posts[i]._id%>">
                 <!-- <img class="img-fluid" src="<%= posts[i].image%>"> -->
               
-              <div class="pl-5 card card-side bg-base-100 shadow-l flex-col items-center max-w-[50rem] lg:min-w-[50rem] md:min-w-[50rem]">
+              <div class="pl-5 card card-side rounded-sm bg-base-100 shadow-l flex-col items-center max-w-[50rem] lg:min-w-[50rem] md:min-w-[50rem] sm:w-screen">
                 <div class="flex gap-1 items-start">
-                  <figure class="max-w-[5rem] pt-10"><img src="<%= posts[i].image%>" alt="Movie"/></figure>
-                <div class="card-body">
+                  <figure class="max-w-[10rem]max-h-[10rem] pt-10"><img class="object-cover h-[10rem] w-[8rem]" src="<%= posts[i].image%>" alt="Movie"/></figure>
+                <div class="card-body w-full md:w-[40rem]">
                   <div class="flex justify-between">
                     <div class="flex gap-1 items-center">
                         <div><i class="fa fa-user"></i></div>

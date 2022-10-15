@@ -54,7 +54,7 @@
       }
     </script>
   </head>
-  <body class="bg-[#20252f]">
+  <body class="bg-[#20252f] flex justify-center">
     <!-- <header class="container"> -->
     <!-- <div class="text-center">
         <h1 class=""><a href="/profile">Binary Upload Boom</a></h1>
@@ -107,15 +107,24 @@
             class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a class="text-right border-2 border-white" href="/profile"
-                >View Profile</a
+              <a class="" href="/profile"
+                ><span class="fa fa-user"></span><span>Account</span></a
               >
             </li>
-            <li><a>Settings</a></li>
-            <li><a>Help</a></li>
+            <li>
+              <a><span class="fa fa-sliders"></span><span>Settings</span></a>
+            </li>
+            <li>
+              <a><span class="fa fa-circle-info"></span><span>Help</span></a>
+            </li>
+            <li>
+              <a href="/logout"
+                ><span class="fa fa-power-off"></span><span>Logout</span></a
+              >
+            </li>
           </ul>
         </div>
-        <%} else {%>
+        <%} else if(!title) {%>
         <a href="/login">
           <button class="btn btn-outline btn-info btn-xs">LOGIN</button>
         </a>
