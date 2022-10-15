@@ -1,3 +1,6 @@
+# Ivenask - Ask A Techie
+Do you have any tech queries? I may have some answers...
+
 <<<<<<< HEAD
 # Install
 
@@ -19,7 +22,7 @@
 # Run
 
 `npm start`
+
 =======
-# Ivenask - Ask A Techie
-Do you have any tech queries? I may have some answers...
+
 >>>>>>> 241b0d6fa25c999754d300639fc1670fa64336b1
